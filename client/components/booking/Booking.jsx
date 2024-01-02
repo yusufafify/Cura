@@ -9,7 +9,7 @@ const Booking = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center h-screen flex-wrap">
       <div className="w-full max-w-[550px] bg-white">
         <div className="card-container">
           <div className="card">

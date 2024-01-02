@@ -2,6 +2,7 @@
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -61,14 +62,14 @@ export default function Nav() {
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-lg font-semibold leading-6 text-gray-900">
+          <Link href="/appointment" className="text-lg font-semibold leading-6 text-gray-900">
             <button
               type="button"
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center "
             >
               Book an appointment
             </button>
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -146,8 +147,8 @@ export default function Nav() {
                 </a>
               </div>
               <div className="py-6">
-                <a
-                  href="#"
+                <Link
+                  href="/appoinment"
                   className="text-lg font-semibold leading-6 text-gray-900"
                 >
                   <button
@@ -156,7 +157,7 @@ export default function Nav() {
                   >
                     Book an appointment
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
