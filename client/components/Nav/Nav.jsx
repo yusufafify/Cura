@@ -51,15 +51,15 @@ export default function Nav() {
             Home
           </a>
 
-          <a href="#" className="text-lg font-semibold leading-6 text-gray-900">
+          <Link href="/about" className="text-lg font-semibold leading-6 text-gray-900">
             About
-          </a>
+          </Link>
           <a href="#" className="text-lg font-semibold leading-6 text-gray-900">
             Departments
           </a>
-          <a href="#" className="text-lg font-semibold leading-6 text-gray-900">
+          <Link href="/contact" className="text-lg font-semibold leading-6 text-gray-900">
             Contact Us
-          </a>
+          </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link href="/appointment" className="text-lg font-semibold leading-6 text-gray-900">
@@ -139,12 +139,12 @@ export default function Nav() {
                 >
                   Departments
                 </a>
-                <a
-                  href="#"
+                <Link
+                  href="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact Us
-                </a>
+                </Link>
               </div>
               <div className="py-6">
                 <Link

@@ -1,15 +1,23 @@
 import React from "react";
 import AboutUs from "@/components/about/AboutUs";
 import Nav from "@/components/Nav/Nav";
-import Booking from "@/components/booking/Booking";
-import Contact from "@/components/contact/Contact";
+import Question from "@/components/questions/Question";
+import Stats from "@/components/stats/Stats";
+import Footer from "@/components/footer/Footer";
+import Testimonials from "@/components/testimonials/Testimonials";
+import Departments from "@/components/departments/Departments";
 const Home = () => {
   return (
     <div>
       <Nav />
       <AboutUs />
-      <Contact />
-      <Booking/>
+      <Departments/>
+      <Stats/>
+      <Testimonials/>
+      <Question />
+      <Footer/>
+      
+  
     </div>
   );
 };
